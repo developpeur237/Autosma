@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mobile menu accordions responsive</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="stylesheet" type="text/css" href="C:\softronic-cm.com\Styles/bootstrap.mini.css">
+    <script src="C:../softronic-cm.com/Styles/jquery.min.js"></script>
+    <script src="C:..//softronic-cm.com/Styles/popper.min.js"></script>
+    <script src="..//Styles/bootstrap.min.js"></script>
+
+    <!--<script src="C:\softronic-cm.com\Styles/bootstrap.min.js"></script>-->
+    <style type="text/css">
+    html {
+            position: relative;
+        }
+        /*@media screen and (max-width: 720px){*/
+        /*----------------modifie l'etat des menu simultanement -------------------*/
+        /*{
+	margin: 0px;
+	padding: 0px
+	font-family: sans-serif;
+	list-style:none;
+	text-decoration: none;
+	background-position: left;
+}*
+/*----------------------------------------FIN-------------------------------*/
+        /*------------------le porteur du menu principal------------------*/
+        
+        .middle {
+            position: relative;
+            width: 100%;
+            /*transform: translate(50%,50%);
+/*------if uncommented, the hole menu will centered-³Ãı♥!☻☺♦♠þ○╬Ì▬«♫!♣♦,╝£∟∟∟B♠Ü◙j*¬¬¬•Ð±◘©þ☼ƒ*/
+        }
+        /*-----------------------------------FIN-----------------------------------*/
+        /*---------------Modifie l'aspet du menu principal (bordure,largeuer, rondeur, couleur etc)-------------*/
+        
+        .menu2 {
+            width: 150px;
+            border-top-right-radius: ;
+            border-bottom-right-radius: ;
+            border-top-right-radius: ;
+            border-bottom-right-radius: 30px;
+            overflow: hidden;
+            /* padding:12px; /* if padding comment is removed, the position of the menu from the corner point culd now be modified in px units*/
+            /*-----------------------------------FIN-----------------------------------*/
+        }
+        /*--------------Modifie l'aspet des elements(item) delimiteurs du menu (coleur et taille du separateur)---------------*/
+        
+        .item {
+            display: block;
+            border-top: 0.9px solid black;
+            border-top-style: groove;
+            overflow: hidden;
+        }
+        /*-----------------Modifie (disposition, couleure, aspet,paginage etc) le petit boutton qui indique le sous-menu---------------------*/
+        
+        .btn {
+            display: block;
+            padding: 14px 14px;
+            background: rgb(0, 87, 200);
+            color: white;
+            position: relative;
+            transition-duration: 3s;
+        }
+        /*--------------------------------FIN-----------------------------------------*/
+        /*-----------------Modifie (disposition, couleure, aspet,paginage etc) le petit boutton haut qui indique le sous-menu au passage de la sourie---------------------*/
+ 
+        .btn:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    /*  largeuer du bouton*/
+    height: 15px;
+    /* hauteure du bouton*/
+    background: rgb(0, 87, 200);
+    /*  couleure du bouton*/
+    left: 60px;
+    /* zone specific qui modifie le deplacement horizontal du bouton bleu*/
+    bottom: -14.6px;
+    /*modifie le deplacement vertical du bouton */
+    transform: rotate(45deg);
+    transition-duration: 3s;
+    border-right: 5px solid #b3d2f1;
+    border-bottom: 5px solid white; 
+
+        }
+
+
+      .btn:hover {
+    left: 10px;
+    border-left: 30px solid chartreuse;
+    border-left-style:groove; 
+        right: 10px;
+    border-right: 30px solid chartreuse;
+    transition-duration: 2s;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1);
+}
+  
+        /*-----------------FIN---------------------*/
+        /* modifie(format) les elements(i) du menu*/
+        
+        .btn i {
+            margin-right: 6px;
+        }
+
+            /*-------------------------------------------FIN------------------------------------------------*/
+        /* --------------modifie l'espace entre les different bordure des element du menu----------*/
+        
+        .smenu {
+            background: #333;
+            overflow: hidden;
+            transition: max-height 2s;
+            max-height: 1px;
+        }
+        /*--------------------------------------------FIN-----------------------------------------------*/
+        /*------------------------------Modifie les sous menu-------------------------*/
+        
+        .smenu a {
+            display: block;
+            padding: 16px 26px;
+            color: white;
+            font-size: 16px;
+            margin: 0px 4px;
+            position: relative;
+        }
+        /*---------------------------------------------FIN-----------------------------*/
+        /*--------------------------Modifie la bar verticala qui apparait au passage de la souris dans les sous menu --------*/
+        
+        .smenu a:before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #3498db;
+            left: -15px;
+            top: 16px;
+            background-color: rgba(0, 200, 10, 0.90);
+            transition: 0.4s;
+            opacity: 0;
+            transform: rotate(45deg);
+            border-top-right-radius: ;
+            border-bottom-right-radius: ;
+            border-top-right-radius: ;
+            border-bottom-right-radius: px;
+        }
+        
+        .smenu a:hover:before {
+            opacity: 1;
+        }
+        
+        .item:target .smenu {
+            max-height: 35em;
+        }
+
+        .a{
+            background-color: rgba(0, 87, 197, 0.53);
+            box-shadow: 2px 4px 7px 3px #020442;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="middle">
+        <div class="menu">
+            <li class="item" id="ACCUEIL">
+                <a href="#ACCUEIL" class="btn"><i class="far fa-user"></i>PRESENTATION</i></a>
+                <div class="smenu">
+                    <a class="underline:none" style="    background-color: rgba(0, 87, 197, 0.53); box-shadow: inset 16px 9px 9px #000340;">
+					Bienvenue dans AUTOSMA. L'automat de gestion de données scolaire. 
+					Avec autosma, vous avez la possibilité de gerer plusieurs module fonctionnel pour le bon functionnement du system scolaire.  </a>
+                    <a class="a" href="audio-pre.html">Ecouter la version audio</a>
+
+            </li>
+
+
+            <li class="item" id="LICENCE">
+                <a href="#LICENCE" class="btn"><i class="far fa-cog"></i>LICENCE DU PRODUIT</i></a>
+                <div class="smenu">
+                    <a style="    background-color: rgba(0, 87, 197, 0.53);box-shadow: inset 16px 9px 9px #000340;">The MIT License (MIT)
+
+Copyright (c) 2019, Njiky Ngankou Adrian alias Deltoro
+
+Permission is hereby not granted to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE. </a>
+                    <a class="a" href="audio-Lic-fr.html">Ecouter la version audio Française </a>
+                    <a class="a" href="audio-Lic-en.html"> Ecouter la version audio Anglaise</a>
+                </div>
+            </li>
+
+            <li class="item" id="SUPPORT">
+                <a href="#SUPPORT" class="btn"><i class="far fa-envelope"></i>CREDIT</i></a>
+                <div class="smenu">
+                    <a class="a" href="#">Ecouter la version audio</a>
+                </div>
+            </li>
+
+            <li class="item" id="DEVELOPPEUR">
+                <a href="#DEVELOPPEUR" class="btn"><i class="far fa-cog"></i>DEVELOPPEUR</i></a>
+                <div class="smenu">
+                    <a style="    background-color: rgba(0, 87, 197, 0.53);box-shadow: inset 16px 9px 9px #000340;">
+                        <center>
+                            <P style="border: 3px solid green;border-left: 6px solid green;border-right: 6px solid green;">
+                                ------------ Cree par Adrian Deltoro --------</P>
+                        </center>
+                        <p>Developpeur, Annalyst des SI, Webmaster et Maintenancier Logiciel</p>
+                        <p>Fondateur de la team #Developpeur237#
+                        </p>
+                        <center>
+                            <p style="border: 3px solid green;border-left: 6px solid green;border-right: 6px solid green;">-------------- membres de la team #Developpeur237#--------------
+                            </p>
+                        </center>
+                        <P>---Deltoro237<br>------Lingo<br>---------Mawo Alan<br>------------Joycy<br>------------------Stone<br>---------------------Armel<br></P>
+                    </a>
+                    <a class="a" href="audio-dev.html">Ecouter la version audio</a>
+                </div>
+            </li>
+
+            <li class="item" id="FUNCTION">
+                <a href="#FUNCTION" class="btn"><i class="far fa-cog"></i>FUNCTION</i></a>
+                <div class="smenu">
+                    <a style=" background-color: rgba(0, 87, 197, 0.53);box-shadow: inset 16px 9px 9px #000340;">
+                        <p>#Function.</p>
+                        <p>Conscient que les function d'une application sont variantes et evolutif avec les differentes version de mise a jours, Le logiciel AUTOSMA a pour principale function de faciliter la gestion des données scolaire en les numerisant
+                            et sauvegardant via divers methodes. Contrairement au données scolaire stocker sur papier et archiver, qui présente cependant des risque élevé de perte d'informations. Ces risque pouvant etre entre autres:<br> 1) Accident d'Incendie
+                            menant a la perte des documents important.<br> 2) Optension des documents par infractions par des personne mal intensionner<br> 3) Mauvaise archivages des documents resultant a des perte de temps.<br> 4) Prise d'hotage des
+                            documents par des personne en droit ou non pour des raison égoistes.<br> 5) Nom disponibilité des documents en des moments de besoin urgents ( Lors d'un déplacemment ).</p>
+                    </a>
+                    <a class="a" href="audio-function.html">Ecouter la version audio</a>
+                </div>
+            </li>
+
+            <li class="item" id="VERSION">
+                <a href="#VERSION" class="btn"><i class="far fa-cog"></i>VERSION DU PRODUIT</i></a>
+                <div class="smenu">
+                    <a style="background-color: rgba(0, 87, 197, 0.53);box-shadow: inset 16px 9px 9px #000340;">AUTOSMA version 2.0. du System Deltoro Corp.</a>
+                    <a class="a" href="audio-vers.html">Ecouter la version audio</a>
+                </div>
+            </li>
+            </div>
+        </div>
+        <div></div>
+</body>
+
+</html>

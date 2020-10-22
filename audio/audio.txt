@@ -1,0 +1,54 @@
+--------Bienvenue----------------
+
+-----------connexion---------------------
+
+--------deconnexion----------------
+
+--------loading------------------
+
+--------save----------------
+
+---------sol--------------
+
+----------eleve-----------------
+
+-----------prof--------------
+
+
+--------hora----------------
+
+---------infos--------------
+
+----------cours-----------------
+
+-----------clas--------------
+
+-------------credit------------
+Je me presente, Autosma. L'automate de gestion de vos donnée scolaire.
+Developper et concue par Adrian  Deltoro. 
+Je suis la version 2 .0. du System Deltoro Corpp.
+mes compétance actuellement a jours , sond.
+Inscription.
+Scolarité.
+Gestion des notes.
+Gestion des cours.
+gestion de tache.
+gestion des enseignant .
+gestion des informations relative a l'etablissaement et statistique  des evenements.
+gestion des salles de classe.
+programmation des aurairre de cours.
+Envois des messages Personnalisée et Orientée
+
+pour plus dinformation sur les Logiciel Deltoro Corpp. veillez contacter Adrian Deltoro via 
+Email : DeltoroCorpp237@gmail.com
+ou via whatapp au 6 55 53 56 87
+
+-------------------------
+
+-------------------------
+
+-------------------------
+
+
+
+
