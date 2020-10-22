@@ -1,0 +1,64 @@
+/*header style*/
+
+body{background-color: rgba(43, 60, 60, 0.48);}
+
+
+
+
+header{text-align: left;}
+
+.headertable{width: 100%; align-content: center; border:6px solid green; background-color: rgba(0, 255, 255, 0.46);}
+
+nav {
+    box-shadow: 0px 2px 30px 2px;
+    width: 100%;
+    background-color: rgba(0,87,197,1);
+    font-size: 10px;
+}
+
+.welcome1{
+	transform: translate(25%, 0px); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border-top-left-radius: 62px; border-top-right-radius: 62px; padding-bottom: 5px; padding-top: 5px; font-size: 17px; text-align: center; background-color: #92ffef; box-shadow: inset 7px 0px 25px 10px #2932B3;
+}
+.wel-ref1{
+	color: white
+}
+
+.th-cookies{
+	width: auto
+}
+.inout {
+    border: 3px solid #ff0b0b;
+    background: #df8888;
+    height: 20px;
+    border-radius: 60px;}
+.div-cookies{
+	border: 5px solid #007b14; transform: translate(0%, 0%); border-top: 4px solid #2e9932; border-bottom: 5px solid #23610a; border-bottom-style: ridge; background-color: #7cff00; color: #000000; border-bottom-left-radius: 15px; font-size: 11px; border-top-right-radius: 15px;float: right; text-align: center; width: 40%;
+}
+.logout{color: chartreuse;font-size: 15px;position: relative; transition-duration: 1s; transform: translate(32%);
+}
+.ref-logout{color: #5e0707}
+
+.ul-menu-1{transform: translate(5.5%);}
+
+.date-div{background-color: rgba(6, 7, 7, 0.61); box-shadow: 23px 2px 10px green}
+
+.insc, .ele, .solva, .prof, .cours, .class, .hora, .inf{
+border: 2px solid #282923;
+margin-right: 2px;
+border-radius: 6px;
+}
+
+
+.insc:hover, .ele:hover, .solva:hover, .prof:hover, .cours:hover, .class:hover, .hora:hover, .inf:hover{
+background: lightgray;
+}
+.menu-ref{color: white}
+.menu-ref:hover{color: black}
+
+
+@media screen and (max-width: 721px){
+.ul-menu-1 {
+    transform: translate(1.5%);
+}
+}
+
