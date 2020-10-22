@@ -19,4 +19,3 @@
 	<a href="#"><button class="ver" > VERSION</button></a>
 	<a href="#"><button class="cre" > CREDITS</button></a>
 </body>
-</html>
